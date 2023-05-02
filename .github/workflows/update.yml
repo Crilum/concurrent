@@ -25,10 +25,12 @@ jobs:
           rm -rf ./compliments/ ./TGN-bot/
           git clone https://github.com/Crilum/compliments/
           cd ./compliments/
+          rm -rf .git/
           npm install
           cd ..
           git clone https://github.com/Crilum/TGN-bot/
           cd ./TGN-bot/
+          rm -rf .git/
           PUPPETEER_CACHE_DIR=${GITHUB_WORKSPACE}/TGN-bot/node-modules/puppeteer/.cache/ npm install
           cd ..
           git add -f .
