@@ -31,7 +31,7 @@ jobs:
           cd ./TGN-bot/
           PUPPETEER_CACHE_DIR=${GITHUB_WORKSPACE}/TGN-bot/node-modules/puppeteer/.cache/ npm install
           cd ..
-          git add -f ./compliments/* ./TGN-bot/*
+          git add -f .
           echo "Just added files: $?"
           git commit -m "Updated compliments and TGN"
           echo "Just comitted files: $?"
